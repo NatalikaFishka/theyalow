@@ -1,0 +1,934 @@
+/* Icons font */
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?97b19d');
+    src:  url('fonts/icomoon.eot?97b19d#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?97b19d') format('truetype'),
+      url('fonts/icomoon.woff?97b19d') format('woff'),
+      url('fonts/icomoon.svg?97b19d#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon'  ;  /* !important; */
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+/* Other fonts */
+
+@font-face {
+  font-family: 'Segoe WP N';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Segoe WP N'), url('fonts/SegoeWPN/SegoeWPN.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'PTSans-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PTSans-Regular'), url('fonts/PTSans/pt-sans-v11-latin-regular.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'PTSans-Bold';
+      font-style: normal;
+      font-weight: normal;
+      src: local('PTSans-Bold'), url('fonts/PTSans/pt-sans-v11-latin-700.woff') format('woff');
+      }
+
+/* Icons set */
+
+  .icon-arrow-play:before {
+    content: "\e902";
+    color: #fff;
+  }
+
+
+  .icon-dot-icon:before {
+    content: "\e907";
+    color: #f5c506;
+  }
+
+
+  .icon-plus-icon:before {
+    content: "\e90a";
+
+  }
+  
+
+  .icon-volume:before {
+    content: "\e90d";
+    color: #f5c506;
+  }
+
+
+
+  body {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    @media only screen and (min-width: 1000px) {
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 10fr 1fr;
+      grid-template-areas: "aside-header-1 header1 aside-header-2" 
+                            "aside-header-left header2 aside-header-right"
+                            "aside-main-1 main aside-main-2" ;
+    }
+  }
+  /* Header section */
+
+  header {
+      background-image: url(assets/header-back-image.png);
+      background-size: cover;
+  }
+
+  .header {
+    grid-area: header1;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 5rem;
+    padding-top: 2rem;
+  }
+
+  .header-item {
+    display: flex;
+    flex-basis: 44%;
+    min-width: max-content;
+  }
+
+  /* Logo */
+
+  .icon-logo-clone:before , .icon-logo:before {
+    content: "\e908";
+    color: #f5c506;
+  }
+
+  .logo-set {
+    display: flex;    
+  }
+
+  .logo {
+    margin: auto 1rem auto 0;
+  } 
+
+  .icon-logo {
+    font-size: 60px;
+    opacity: 0.4;
+    position: absolute;
+  }
+
+  .icon-logo-clone {
+    font-size: 60px;
+  }
+  
+
+  #clone,  #clone2 {
+    transform: rotate(45deg);
+  }
+
+  h1 {
+    margin: auto 0;
+    color: #fff;
+    font-family: "Segoe WP N";
+    font-style: italic;
+    font-weight: 200;
+    font-size: 2.5rem;
+  }
+
+  /* Navigation */
+
+  .icon-about-us:before {
+    content: "\e900";
+    color: #b99403;
+    font-family: 'icomoon';
+  }
+
+  .icon-contact:before {
+    content: "\e905";
+    color: #b99403;
+    font-family: 'icomoon';
+  }
+
+  .icon-service:before {
+    content: "\e90b";
+    color: #b99403;
+    font-family: 'icomoon';
+  }
+
+  nav {
+    background-color: rgba(245, 197, 6, 1);
+    height: 2rem;
+    justify-content: space-evenly;
+    box-shadow: -0.25rem -0.25rem rgba(245, 197, 6, 0.4), 
+                -0.5rem -0.5rem rgba(245, 197, 6, 0.2);
+  }
+
+
+
+
+  .navigation p {
+    display: inline;
+    text-transform: uppercase;
+    color: #b99403;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;;
+  }
+
+  .navigation p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .header-item .navigation + .navigation {
+    border-left: 0.1rem solid rgba(185, 148, 3, 1);
+    padding-left: 1rem;
+  }
+
+  .nav-content {
+    line-height: 2rem;
+  }
+
+/* Main header video area */
+
+.icon-arrow-right:before {
+  content: "\e903";
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  padding-right: 0.35rem;
+  float: right;
+}
+
+.icon-arrow-left:before {
+  content: "\e901";
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  padding-left: 0.35rem;
+}
+
+.main-header-scroll {
+  grid-area: header2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 28rem;
+}
+
+.scroll-arrows-left {
+  grid-area: aside-header-left;
+}
+
+.scroll-arrows-right {
+  grid-area: aside-header-right;
+  justify-self: right;
+}
+
+.scroll-arrows-right:hover, .scroll-arrows-left:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.scroll-arrows {
+  background-color: rgba(245, 197, 6, 1);
+  width: 2rem;
+  height: 4rem;
+  align-self: center;
+}
+
+.main-header-scroll div h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 0 2rem;
+  color:  rgba(245, 197, 6, 1);
+  font-family: 'Segoe UI', sans-serif;;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.main-header-scroll div h2 + h2 {
+  color:  #ffffff;
+}
+
+.video-image {
+  background-color: rgba(245, 197, 6, 1);
+  position: relative;
+  display: inline-block;
+}
+
+.video-image img {
+  display: block;
+  width: 550px;
+  height: 330px;
+  opacity: 0.9;
+}
+
+ .main-play-div {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 50%;
+  left: 50%;
+  margin: -2rem 0 0 -2rem;
+  background-color: rgba(245, 197, 6, 0.7);
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-play-item {
+  line-height: 2rem;
+  font-size: 2rem;
+  padding-left: 0.5rem;
+}
+
+.controls {
+  position: absolute;
+  top: 85%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+  width: 31rem;
+}
+
+.video-image .control-play-div {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgba(245, 197, 6, 0.7);
+  display: flex;
+  justify-content: center;
+} 
+
+#control-play {
+  line-height: 1.5rem;
+  padding-left: 0.15rem;  
+}
+
+.progress-video {
+  width: 25rem;
+  height: 1.5rem;
+  display: flex;
+}
+
+#volume {
+  line-height: 1.5rem;
+}
+
+.progress-bar {
+  background: rgba(245, 197, 6, 0.3);
+  margin: auto 0;
+  height: 0.8rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.bar-fill {
+  height: 0.8rem;
+  display: block;
+  width: 45%;
+  background: rgba(245, 197, 6, 1);
+  border-radius: 1rem 0 0 1rem;
+}
+
+
+/* Feature section */
+
+.icon-cloud-download:before {
+  content: "\e904";
+  color: #f5c506;
+}
+
+.icon-customise:before {
+  content: "\e906";
+  color: #f5c506;
+}
+
+.icon-paper-plane:before {
+  content: "\e909";
+  color: #f5c506;
+}
+
+.features {
+  background-image: url(assets/feature-background.png);
+  background-size: cover;
+  box-shadow: 0 -8px 10px -6px rgb(58, 58, 58);
+} 
+
+.feature-location {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+
+}
+
+.feature {
+  height: 10rem;
+  flex-basis: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-left: 1px solid #d4d4d4;
+}
+
+.feature:last-child {
+  border-right: 1px solid #d4d4d4;
+}
+
+.feature-icon {
+  font-size: 4.5rem;
+}
+
+.feature h3{
+  margin: 0 0 1rem 0;
+  font-family: 'Segoe UI', sans-serif;;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+/* Calendar-twitter section */
+
+.icon-twitter:before {
+  content: "\e90c";
+  color: #bc7d00;
+}
+
+
+.calendar-twitter-carousel {
+  background-image: url(assets/calendar-twitter-carousel.png);
+  background-size: cover;
+  box-shadow: inset 0 8px 10px -6px rgb(58, 58, 58);
+}
+
+
+.calendar-location {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-location h3 {
+  font-size: 3rem;
+  color:#fff;
+  font-family: 'Segoe UI', sans-serif;;          /* заменить шрифт */
+  font-weight: 200;
+  margin: 1.5rem 0;
+}
+
+.main-twitter-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.decsriprion-image {
+  display:flex;
+  flex-basis: 50%;
+}
+
+.twitter-section-item {
+  width: 21rem;
+  height: 15rem;
+  background-color: #eca80e;    /* заменить цвет */
+  display: flex;
+  justify-content: center;
+}
+
+.twitter-section-text {
+  margin: auto;
+  width: 80%;
+}
+
+.twitter-section-text p {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;        /* заменить шрифт */
+  color: #fff;
+  font-size: 1.9rem;
+  font-weight: 100;
+}
+
+.twitter-section-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.twitter-icon-container {
+  display: flex;
+}
+
+.icon-twitter {
+  align-self: center;
+  font-size: 10rem;
+  margin-top: 1rem;
+}
+
+.twitter-main-play-div {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(245, 197, 6, 0.7);
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.twitter {
+  display: flex;
+}
+
+.plus-icon, .twitter-count {
+  position: absolute;
+  width: 21rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.plus-icon {
+  align-self: flex-end;
+}
+
+.icon-plus-icon:hover {
+  cursor: pointer;
+  color: #bc7d00;
+}
+
+.icon-plus-icon {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.twitter-count-numer {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color:#fff;
+  font-family: 'Segoe UI', sans-serif;;       /* заменить шрифт */
+}
+
+.calendar-date {
+  width: 7rem;
+  height: 6rem;
+  background-color: #ddb101; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.calendar-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  height: 3.5rem;
+  font-size: 3rem;
+  color:#fff;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  align-self: center;
+}
+
+.month {
+  align-self: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color:#c88b15;  
+  font-family: 'Segoe UI', sans-serif;       /* заменить шрифт */
+}
+
+.calendar-slider {
+  width: 80%;
+  margin: 2rem auto 1rem auto;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0.8rem;
+  background: #fff;
+  border-radius: 1rem;
+  opacity: 0.5;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20%;
+  height: 0.8rem;
+  background: rgba(236, 158, 3, 1);
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20%;
+  height: 0.8rem;
+  background: rgba(236, 158, 3, 1);
+  cursor: pointer;
+  border-radius: 1rem;
+  border-color: rgba(236, 158, 3, 1);
+}
+
+
+/* Devices section */
+
+.supported-devices-location {
+  grid-area: main;
+}
+
+.supported-devices {
+  background-image: url(assets/background-devises.png);
+  background-size: cover;
+ }
+
+.supported-devices-location h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  color:  rgba(245, 197, 6, 1);
+  margin: 2rem;
+  font-family: "PTSans-Regular", sans-serif;;
+  text-transform: uppercase;
+  font-weight: 100;                       
+}
+
+.device-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: max-content 21rem;
+  grid-template-rows: repeat(4, max-content);
+  justify-content: center;
+  grid-gap: 1rem;
+ 
+}
+
+.its-free-circle {
+  width: 7rem;
+  height: 7rem;
+  background: #f5c506;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.device-images {
+  margin: 2rem 0 0 2rem;
+}
+
+.tablet, .phone{
+  margin: 0 0 2.5rem 1rem;
+}
+
+.its-free-circle p{
+  text-transform: uppercase;
+  margin: auto;
+  font-family: 'PTSans-Bold', sans-serif;
+}
+
+.list p {
+ margin: 0;
+ font-size: 1.3rem;
+ color: #a9a9a7;
+ font-family: 'Segoe UI', sans-serif;  
+}
+
+.list span {
+  line-height: 1.3rem;
+  margin-top: 0.3rem;
+
+}
+
+/* Footer */
+footer {
+  background-color: #4c4c4c;
+  box-shadow:  0 -8px 10px -6px rgb(0, 0, 0);;
+}
+.footer-logo {
+  grid-area: main;
+  display: flex;
+  
+}
+
+.footer-logo-icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+}
+
+#footer-logo-main {
+  font-size: 3rem;
+}
+
+#footer-logo-clone {
+  font-size: 3rem;
+  transform: rotate(45deg);
+  opacity: 1;
+}
+
+.footer-logo p {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color:#FFF;  
+  font-family: "Segoe WP N";
+  font-style: italic;
+  font-weight: 200;
+  margin: auto 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+header {
+  background-image: unset;
+}
+
+.header {
+  width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto 3fr;
+  grid-template-rows: max-content;
+  align-items: unset;
+  height: unset;
+  background-color: #595959;
+}
+
+nav.header-item {
+   height: 100%;
+   box-shadow: none;
+}
+
+.logo {
+  margin: 0.5rem 0.5rem;
+}
+
+.icon-logo {
+  font-size: 2.5rem;
+}
+
+.icon-logo-clone {
+  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.nav-content, .navigation p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.navigation span {
+  margin-right: 1rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.cool {
+  display: none;
+}
+
+.main-header-scroll {
+  display: block;
+  height: unset;
+}
+
+.video-image {
+  display: block;
+}
+
+.video-image img {
+   width: 100%;
+  height: 100%;
+}
+
+.controls {
+  width: 90%;
+}
+
+.progress-video {
+  width: 80%;
+}
+
+.scroll-arrows {
+  display: none;
+}
+
+.feature:last-child {
+  border: none;
+}
+
+.feature {
+  border: none;
+}
+
+.calendar-twitter-carousel {
+ background: unset;
+ box-shadow: unset;
+}
+
+.calendar-location h3 {
+  display: none;
+}
+
+.twitter-icon-container {
+  width: 50%;;
+  justify-content: center;
+}
+
+.main-twitter-area {
+  flex-direction: column;
+  align-items: center;
+}
+
+.decsriprion-image {
+  margin: 1rem 0;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.twitter-count-numer, .calendar-date, .calendar-slider, .plus-icon-hidden , .list{
+  display: none;
+}
+
+.only-twitter-section-item {
+  width: 100%;
+  background-color: #f5c507;
+
+}
+
+.supported-devices-location h3 {
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+.device-content {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 3rem;
+}
+
+.device-images {
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  grid-column-gap: 1rem;
+  align-items: end;
+}
+
+#footer-logo-clone, #footer-logo-main {
+  font-size: 2rem;
+}
+
+.footer-logo p {
+  font-size: 1.2rem;
+}
+
+.footer-logo-icon {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem 0.5rem 0.5rem 4rem;
+}
+
+.only-twitter-section-item {
+  justify-content: space-evenly;
+}
+
+.messages {
+  color: #aea998;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.white-back{
+  height: 3rem;
+  display: flex;
+  background-repeat: no-repeat;
+  background-image: url(assets/white-background-message.png);
+  background-size: contain;
+}
+
+.message-text {
+  width: fit-content;
+  margin: auto;
+  margin-left: 2rem;
+}
+
+.message-text p {
+  margin: 0;
+}
+
+form {
+  height: 2rem;
+  display: inline-flex;
+  padding-left: 0.5rem;
+}
+
+input[type=text] {
+  width: 12.2rem;
+  border: #c28401;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  box-shadow: inset 2px 0 5px -3px rgb(92, 91, 91);
+  outline: none;
+  padding: 0 1rem;
+}
+
+input[type=submit] {
+  width: 5rem;
+  background-color: #e2a11f;
+  color: #fff;
+  border: #d0a806;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+}
+ 
+}
