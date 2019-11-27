@@ -108,9 +108,9 @@
   }
 
   .header-item {
-    display: flex;
-    flex-basis: 44%;
+    display: grid;
     min-width: max-content;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   /* Logo */
@@ -156,49 +156,49 @@
 
   .icon-about-us:before {
     content: "\e900";
-    color: #b99403;
     font-family: 'icomoon';
   }
 
   .icon-contact:before {
     content: "\e905";
-    color: #b99403;
     font-family: 'icomoon';
   }
 
   .icon-service:before {
     content: "\e90b";
-    color: #b99403;
     font-family: 'icomoon';
   }
 
   nav {
     background-color: rgba(245, 197, 6, 1);
-    height: 2rem;
     justify-content: space-evenly;
     box-shadow: -0.25rem -0.25rem rgba(245, 197, 6, 0.4), 
                 -0.5rem -0.5rem rgba(245, 197, 6, 0.2);
   }
 
-
-
-
   .navigation p {
     display: inline;
     text-transform: uppercase;
-    color: #b99403;
     font-size: 1rem;
     font-family: 'Segoe UI', sans-serif;;
   }
 
-  .navigation p:hover {
-    text-decoration: underline;
+  .header-item button {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    color: #b99403;
+  }
+
+  .header-item button:hover {
+    background-color: rgba(185, 148, 3, 0.6);
     cursor: pointer;
+    color: rgba(245, 197, 6, 1);
   }
 
   .header-item .navigation + .navigation {
     border-left: 0.1rem solid rgba(185, 148, 3, 1);
-    padding-left: 1rem;
   }
 
   .nav-content {
