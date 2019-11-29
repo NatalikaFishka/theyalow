@@ -85,7 +85,7 @@
     @media only screen and (min-width: 1000px) {
     .main-grid {
       display: grid;
-      grid-template-columns: 1fr 10fr 1fr;
+      grid-template-columns: 1fr 7.3fr 1fr;
       grid-template-areas: "aside-header-1 header1 aside-header-2" 
                             "aside-header-left header2 aside-header-right"
                             "aside-main-1 main aside-main-2" ;
@@ -102,7 +102,7 @@
     grid-area: header1;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
     height: 5rem;
     padding-top: 2rem;
   }
@@ -110,7 +110,7 @@
   .header-item {
     display: grid;
     min-width: max-content;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.2fr 0.9fr 1fr;;
   }
 
   /* Logo */
@@ -125,17 +125,20 @@
   }
 
   .logo {
-    margin: auto 1rem auto 0;
+    padding: 0 0rem 0.2rem 0;
+    margin: 0rem 0.4rem 0 0.2rem;
+    transform: rotate(1.4deg);
   } 
 
   .icon-logo {
-    font-size: 60px;
+    font-size: 80px;
     opacity: 0.4;
     position: absolute;
+    
   }
 
   .icon-logo-clone {
-    font-size: 60px;
+    font-size: 81px;
   }
   
 
@@ -179,8 +182,12 @@
   .navigation p {
     display: inline;
     text-transform: uppercase;
-    margin: 0.6rem 5px;
+    margin: 0.3rem 5px;
     font-family: 'Segoe UI', sans-serif;
+  }
+
+  .navigation span {
+    font-size: 1.4rem;
   }
 
   .header-item button {
@@ -189,7 +196,7 @@
     outline: none;
     padding: 0 1rem;
     color: #b99403;
-    font-size: 1.4rem;
+    font-size: 1.05rem;
 
     display: flex;
     justify-content: center;
@@ -216,7 +223,7 @@
   content: "\e903";
   color: #fff;
   font-size: 1.5rem;
-  line-height: 4rem;
+  line-height: 3.5rem;
   padding-right: 0.35rem;
   float: right;
 }
@@ -225,7 +232,7 @@
   content: "\e901";
   color: #fff;
   font-size: 1.5rem;
-  line-height: 4rem;
+  line-height: 3.5rem;
   padding-left: 0.35rem;
 }
 
@@ -234,7 +241,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 28rem;
+  height: 28.3rem;
 }
 
 .scroll-arrows-left {
@@ -254,28 +261,35 @@
 .scroll-arrows {
   background-color: rgba(245, 197, 6, 1);
   width: 2rem;
-  height: 4rem;
+  height: 3.5rem;
   align-self: center;
+  margin-top: -1.4rem;
 }
 
 .main-header-scroll div h2 {
   text-align: center;
   font-size: 4rem;
-  margin: 0 2rem;
+  margin: 0 1.2rem 0 0;
   color:  rgba(245, 197, 6, 1);
   font-family: 'Segoe UI', sans-serif;;
   text-transform: uppercase;
   font-weight: 400;
+  line-height: 4.3rem;
+  letter-spacing: 2.5px;
 }
 
 .main-header-scroll div h2 + h2 {
   color:  #ffffff;
+  line-height: 5.2rem;
+  letter-spacing: -0.9px;
 }
 
 .video-image {
   background-color: rgba(245, 197, 6, 1);
   position: relative;
-  display: inline-block;
+  display: inline-block;  
+  margin-left: 0.8rem;
+  margin-bottom: 0.9rem;
 }
 
 video::-webkit-media-controls-panel {
@@ -285,8 +299,8 @@ video::-webkit-media-controls-panel {
 .video-image video {
   object-fit: cover;
   display: block;
-  width: 550px;
-  height: 330px;
+  width: 549px;
+  height: 327px;
   opacity: 0.9;
   outline: none;
 }
@@ -307,25 +321,26 @@ video::-webkit-media-controls-panel {
 
 .main-play-item {
   line-height: 2rem;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding-left: 0.5rem;
 }
 
 .controls {
   position: absolute;
-  top: 85%;
+  top: 85.2%;
   left: 5%;
   display: flex;
   justify-content: space-between;
-  width: 31rem;
+  width: 31.4rem;
 }
 
 .video-image .control-play-div {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.6rem;
+  height: 1.6rem;
   background-color: rgba(245, 197, 6, 0.7);
   display: flex;
   justify-content: center;
+  margin-left: 0.1rem;
 } 
 
 #control-play {
@@ -354,9 +369,13 @@ video::-webkit-media-controls-panel {
 .bar-fill {
   height: 0.8rem;
   display: block;
-  width: 45%;
+  width: 44%;
   background: rgba(245, 197, 6, 1);
   border-radius: 1rem 0 0 1rem;
+}
+
+.cool {
+  margin-bottom: 2.5rem;
 }
 
 
@@ -391,14 +410,14 @@ video::-webkit-media-controls-panel {
 }
 
 .feature {
-  height: 10rem;
-  flex-basis: 22rem;
+  height: 13.2rem;
+  flex-basis: 21.2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   border-left: 1px solid #d4d4d4;
-  box-sizing: border-box640;
+  box-sizing: border-box;
 }
 
 .feature:last-child {
@@ -406,15 +425,16 @@ video::-webkit-media-controls-panel {
 }
 
 .feature-icon {
-  font-size: 4.5rem;
+  font-size: 5.0rem;
 }
 
 .feature h3{
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.9rem 0;
   font-family: 'Segoe UI', sans-serif;;
   text-transform: uppercase;
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  padding-left: 0.9rem;
 }
 
 /* Calendar-twitter section */
@@ -439,11 +459,13 @@ video::-webkit-media-controls-panel {
 }
 
 .calendar-location h3 {
-  font-size: 3rem;
-  color:#fff;
-  font-family: 'Segoe UI', sans-serif;         
-  font-weight: 200;
-  margin: 1.5rem 0;
+  font-size: 2.4rem;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 400;
+  margin: 1.85rem 0;
+  text-transform: uppercase;
+  letter-spacing: -0.08rem;
 }
 
 .main-twitter-area {
@@ -458,25 +480,33 @@ video::-webkit-media-controls-panel {
 }
 
 .twitter-section-item {
-  width: 21rem;
-  height: 15rem;
+  width: 19.6rem;
+  height: 14.6rem;
   background-color: #eca80e;    
   display: flex;
   justify-content: center;
   position: relative;
 }
+.twitter-section-item-text {
+  width: 21.4rem;
+}
+.only-twitter-section-item {
+  width: 20.6rem;
+}
 
 .twitter-section-text {
-  margin: auto;
+  margin: 1rem 2.1rem;
   width: 80%;
 }
 
 .twitter-section-text p {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;       
+  margin: 0rem -0.2rem;
+  font-family: 'Segoe UI', sans-serif;
   color: #fff;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   font-weight: 100;
+  line-height: 2.4rem;
+  word-spacing: 0.5rem;
 }
 
 .twitter-section-item video {
@@ -493,19 +523,20 @@ video::-webkit-media-controls-panel {
 .icon-twitter {
   align-self: center;
   font-size: 10rem;
-  margin-top: 1rem;
+  margin-top: 2.6rem;
 }
 
 .twitter-main-play-div {
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    background-color: rgba(245, 197, 6, 0.7);
-    padding: 1rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: rgba(245, 197, 6, 0.7);
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 0.4rem 0.2rem;
 }
 
 .twitter {
@@ -514,7 +545,7 @@ video::-webkit-media-controls-panel {
 
 .plus-icon, .twitter-count {
   position: absolute;
-  width: 21rem;
+  width: 20.5rem;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -529,21 +560,21 @@ video::-webkit-media-controls-panel {
 }
 
 .icon-plus-icon {
-  padding: 0.5rem;
+  padding: 0.7rem 0.5rem;
   font-size: 0.8rem;
   color: #fff;
 }
 
 .twitter-count-numer {
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 0.8rem 1.1rem;
   color:#fff;
   font-family: 'Segoe UI', sans-serif;;      
 }
 
 .calendar-date {
-  width: 7rem;
-  height: 6rem;
+  width: 7.1rem;
+  height: 5.4rem;
   background-color: #ddb101; 
   display: flex;
   justify-content: center;
@@ -556,8 +587,8 @@ video::-webkit-media-controls-panel {
 }
 
 .number {
-  height: 3.5rem;
-  font-size: 3rem;
+  height: 3.8rem;
+  font-size: 3.1rem;
   color:#fff;
   font-family: 'Segoe UI', sans-serif;
   font-weight: bold;
@@ -566,32 +597,34 @@ video::-webkit-media-controls-panel {
 
 .month {
   align-self: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   color:#c88b15;  
-  font-family: 'Segoe UI', sans-serif;       
+  font-family: 'Segoe UI', sans-serif;    
+  margin-bottom: 0.3rem;   
 }
 
 .calendar-slider {
-  width: 80%;
-  margin: 2rem auto 1rem auto;
+  width: 87.9%;
+  margin: 2.5rem auto 1rem auto;
 }
 
 .slider {
   -webkit-appearance: none;
   width: 100%;
-  height: 0.8rem;
+  height: 1rem;
   background: #fff;
   border-radius: 1rem;
   opacity: 0.5;
   outline: none;
+  margin-left: 1rem;
 }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 20%;
-  height: 0.8rem;
+  height: 1rem;
   background: rgba(236, 158, 3, 1);
   cursor: pointer;
   border-radius: 1rem;
@@ -601,7 +634,7 @@ video::-webkit-media-controls-panel {
   -webkit-appearance: none;
   appearance: none;
   width: 20%;
-  height: 0.8rem;
+  height: 1rem;
   background: rgba(236, 158, 3, 1);
   cursor: pointer;
   border-radius: 1rem;
@@ -622,53 +655,57 @@ video::-webkit-media-controls-panel {
 
 .supported-devices-location h3 {
   text-align: center;
-  font-size: 2.5rem;
-  color:  rgba(245, 197, 6, 1);
-  margin: 2rem;
-  font-family: "PTSans-Regular", sans-serif;;
+  font-size: 2.6rem;
+  color: rgba(245, 197, 6, 1);
+  margin: 2.4rem;
+  font-family: "PTSans-Regular", sans-serif;
   text-transform: uppercase;
-  font-weight: 100;                       
+  font-weight: 100;
+  letter-spacing: 0.1rem;                       
 }
 
 .device-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 3rem;
+  margin-bottom: 6.1rem;
+  position: relative;
 }
 
 .list {
   display: grid;
-  grid-template-columns: max-content 21rem;
+  grid-template-columns: max-content 21.7rem;
   grid-template-rows: repeat(4, max-content);
   justify-content: center;
-  grid-gap: 1rem;
- 
+  grid-gap: 1.2rem;
+  margin-top: 3.2rem; 
 }
 
 .its-free-circle {
-  width: 7rem;
-  height: 7rem;
+  width: 7.1rem;
+  height: 7.1rem;
   background: #f5c506;
   border-radius: 50%;
   color: #fff;
   display: flex;
   justify-content: center;
   position: absolute;
+  top: -2.2rem;
 }
 
 .device-images {
-  margin: 2rem 0 0 2rem;
+  margin: 0.4rem 0 0.3rem 1.1rem;;
 }
 
 .tablet, .phone{
-  margin: 0 0 2.5rem 1rem;
+  margin: 0 0 2.5rem 1.3rem;
 }
 
 .its-free-circle p{
   text-transform: uppercase;
   margin: auto;
   font-family: 'PTSans-Bold', sans-serif;
+  padding-top: 0.2rem;
 }
 
 .list p {
@@ -676,6 +713,7 @@ video::-webkit-media-controls-panel {
  font-size: 1.3rem;
  color: #a9a9a7;
  font-family: 'Segoe UI', sans-serif;  
+ letter-spacing: 0.07rem;
 }
 
 .list span {
@@ -692,33 +730,33 @@ footer {
 .footer-logo {
   grid-area: main;
   display: flex;
-  height: 65px;
+  height: 72px;
 }
 
 .footer-logo-icon {
   width: 3rem;
   height: 3rem;
-  margin: 0.5rem;
+  margin: 0.5rem 0.2rem;
 }
 
 #footer-logo-main {
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
 
 #footer-logo-clone {
-  font-size: 3rem;
+  font-size: 3.2rem;
   transform: rotate(45deg);
   opacity: 1;
 }
 
 .footer-logo p {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
-  color:#FFF;  
+  color: #FFF;
   font-family: "Segoe WP N";
   font-style: italic;
   font-weight: 200;
-  margin: auto 0;
+  margin: 0.8rem 0.4rem;;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -763,7 +801,7 @@ nav.header-item {
 
 h1 {
   font-size: 1.2rem;
-  margin-right: 0.5rem;
+  margin-right: 1.5rem;
 }
 
 .nav-content, .navigation p {
@@ -795,6 +833,7 @@ h1 {
 
 .video-image {
   display: block;  
+  margin: 0;
 }
 
 .video-image video {
@@ -802,7 +841,8 @@ h1 {
 }
 
 .controls {
-  width: 90%;
+  width: 78.4%;
+  left: 12.7%;
 }
 
 .progress-video {
@@ -819,6 +859,17 @@ h1 {
 
 .feature {
   border: none;
+  height: 10.9rem;
+}
+
+.feature-icon {
+  font-size: 3.9rem;
+}
+
+.feature h3 {
+  margin: 0px 0 1.9rem 0;
+  font-size: 1.5rem;
+  padding-left: 0.9rem;
 }
 
 .calendar-twitter-carousel {
@@ -844,7 +895,7 @@ h1 {
   display: grid;
   grid-template-columns: 1px 1fr 1fr 1px;
   gap: 0.5rem;
-  margin: 0.5rem;
+  margin: 0.3rem;
   width: 100%;
   justify-content: space-evenly;
 }
@@ -857,12 +908,21 @@ h1 {
   grid-column: 2 / 3; 
 }
 
+.twitter-section-text {
+  margin: 0.6rem 0rem;
+}
+
 .twitter-section-text p {
   font-size: 1.8rem;
+  word-spacing: 0;
 }
 
 .plus-icon {
   width: 100%;
+}
+
+.icon-plus-icon{
+  padding: 1.1rem 1.1rem;
 }
 
 .twitter-count-numer, .calendar-date, .calendar-slider, .plus-icon-hidden , .list{
@@ -875,9 +935,15 @@ h1 {
 
 }
 
+.icon-twitter {
+  margin-top: 2.8rem;
+  margin-left: -1rem;
+}
+
 .supported-devices-location h3 {
   margin: 0;
   padding: 2rem 1rem;
+  font-size: 2.5rem;
 }
 
 .device-content {
@@ -885,6 +951,7 @@ h1 {
   align-items: center;
   margin: 0;
   padding-bottom: 3rem;
+  position: relative;
 }
 
 .device-images {
@@ -892,6 +959,12 @@ h1 {
   grid-template-columns: max-content max-content max-content;
   grid-column-gap: 1rem;
   align-items: end;
+  margin: 2.6rem 0px 0.3rem 2.5rem;
+}
+
+.its-free-circle {
+  top: 0.1rem;
+    left: 1.9rem;
 }
 
 #footer-logo-clone, #footer-logo-main {
@@ -899,7 +972,8 @@ h1 {
 }
 
 .footer-logo p {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin: 0.8rem 0.2rem;
 }
 
 .footer-logo-icon {
@@ -919,8 +993,10 @@ h1 {
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1rem 0 0.5rem 0rem;
   justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-left: -1.8rem;
 }
 .white-back{
   height: 3rem;
@@ -928,6 +1004,7 @@ h1 {
   background-repeat: no-repeat;
   background-image: url(assets/white-background-message.png);
   background-size: contain;
+  transform: scale(0.9);
 }
 
 .message-text {
@@ -944,16 +1021,18 @@ form {
   height: 2rem;
   display: inline-flex;
   padding-left: 0.5rem;
+  margin-left: 1rem;
 }
 
 input[type=text] {
-  width: 12.2rem;
+  width: 10.5rem;
   border: #c28401;
   border-top-left-radius: 0.6rem;
   border-bottom-left-radius: 0.6rem;
   box-shadow: inset 2px 0 5px -3px rgb(92, 91, 91);
   outline: none;
   padding: 0 1rem;
+  min-width: 10px;
 }
 
 input[type=submit] {
@@ -969,3 +1048,23 @@ input[type=submit] {
 }
  
 }
+
+@media only screen and (max-width: 639px) { 
+
+  h1 {
+    display: none;
+  }
+  .tablet, .phone {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .navigation p {
+    display: none;
+  }
+
+}
+
