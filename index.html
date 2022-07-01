@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>THEYALLOW</title>
     <link href="style.css" type="text/css" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
@@ -23,23 +23,25 @@
                 <h1>THEYALLOW</h1>
             </div>
             <nav class="header-item">
-                <div class="navigation about-us">
+                <button class="navigation about-us">
                     <span class="icon-about-us nav-content"></span>
                     <p class="nav-content">About us</p>
-                </div>
-                <div class="navigation service">
+                </button>
+                <button class="navigation service">
                     <span class="icon-service nav-content"></span>
                     <p class="nav-content">Service</p>
-                </div>
-                <div class="navigation contact">
+                </button>
+                <button class="navigation contact">
                     <span class="icon-contact nav-content"></span>
                     <p class="nav-content">Contact</p>
-                </div>
+                </button>
             </nav>
         </div>
         <section class="main-header-scroll">
             <div class="video-image">
-                <img src="assets/header-video.png">
+                <video controls poster="assets/header-video-img.png">
+                    <source src="assets/matroskin.mp4" type="video/mp4" />
+                </video>
                 <div class="main-play-div">
                     <span class="icon-arrow-play main-play-item"></span>
                 </div>
@@ -98,7 +100,7 @@
                 <h3>Lorem ipsum dolor sit amet</h3>
                 <div class="main-twitter-area">
                     <div class="decsriprion-image">
-                        <div class="twitter-section-item">
+                        <div class="twitter-section-item twitter-section-item-text">
                             <div class="twitter-section-text">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                     incididunt ut</p>
@@ -108,7 +110,9 @@
                             </div>
                         </div>
                         <div class="twitter-section-item">
-                            <img src="assets/calendar-twitter-carousel-video.png">
+                            <video controls poster="assets/calendar-twitter-carousel-video.png">
+                                <source src="assets/matroskin.mp4" type="video/mp4" />
+                            </video>
                             <div class="twitter-main-play-div">
                                 <span class="icon-arrow-play main-play-item"></span>
                             </div>
@@ -168,7 +172,7 @@
                             <p>Its 100% Free</p>
                         </div>
                         <div class="device-images">
-                            <img src="assets/desktop.png">
+                            <img src="assets/desktop.png" class="desktop">
                             <img src="assets/tablet.png" class="tablet">
                             <img src="assets/phone.png" class="phone">
                         </div>
